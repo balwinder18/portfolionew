@@ -48,7 +48,7 @@ export default function Hero (){
       {/* Location + Role */}
       <div className="mt-2 text-left space-y-1">
         <div className="reveal text-sm sm:text-base text-white tracking-wide">
-          Software Developer | Builder
+          Software Developer | Engineeer
         </div>
         {/* Location */}
        
@@ -61,7 +61,7 @@ export default function Hero (){
   />
   </span>
   <span className="align-middle">Haryana, India</span>
-  <span className="text-base align-middle leading-none">🇮🇳</span>
+ 
 </div>
 
         

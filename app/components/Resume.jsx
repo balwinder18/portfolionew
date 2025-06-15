@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Resume() {
   return (
     <section className="w-full pt-4 justify-between px-6 flex bg-black text-white">
-      <h2 className="text-2xl sm:text-3xl font-bold mb-4">My Resume </h2>
+      <h2 className="text-2xl sm:text-3xl font-bold mb-4">Checkout my Resume here </h2>
       
 
       <Link

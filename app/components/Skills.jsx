@@ -1,53 +1,49 @@
 "use client";
+import C from '../../public/images/C.png'
+import react from '../../public/images/react.png'
+import next from '../../public/images/Next.png'
+import JavaScript from '../../public/images/JavaScript.png'
+import TypeScript from '../../public/images/TypeScript.png'
+import Node from '../../public/images/Node.png'
+import Express from '../../public/images/Express.png'
+import Redux from '../../public/images/Redux.png'
+import Tailwind from '../../public/images/Tailwind.png'
+import shadcn from '../../public/images/shadcn.png'
+import NPM from '../../public/images/NPM.png'
+import Python from '../../public/images/Python.png'
+import MongoDB from '../../public/images/MongoDB.png'
+import Java from '../../public/images/Java.png'
+import GitHub from '../../public/images/GitHub.png'
+import Postman from '../../public/images/Postman.png'
+import Vercel from '../../public/images/Vercel.png'
+import datastructure from '../../public/images/datastructure.png'
+import algorithms from '../../public/images/algorithms.png'
 export const techStack = [
-  { label: "React.js", icon: "/icons/react.png" },
-  { label: "Next.js", icon: "/icons/nextjs.png" },
-  { label: "JavaScript", icon: "/icons/javascript.png" },
-  { label: "TypeScript", icon: "/icons/typescript.png" },
-  { label: "Node.js", icon: "/icons/nodejs.png" },
-  { label: "Express.js", icon: "/icons/express.png" },
-  { label: "Appwrite", icon: "/icons/appwrite.png" },
-  { label: "Socket.io", icon: "/icons/socketio.png" },
-  { label: "Redux", icon: "/icons/redux.png" },
-  { label: "Tailwind", icon: "/icons/tailwind.png" },
-  { label: "ShadCN", icon: "/icons/shadcn.png" },
-  { label: "NPM", icon: "/icons/npm.png" },
-  { label: "Python", icon: "/icons/python.png" },
-  { label: "Go", icon: "/icons/go.png" },
-  { label: "Postgres", icon: "/icons/postgres.png" },
-  { label: "MongoDB", icon: "/icons/mongodb.png" },
-  { label: "Docker", icon: "/icons/docker.png" },
-  { label: "GitHub", icon: "/icons/github.png" },
-  { label: "C++", icon: "/icons/cpp.png" },
-  { label: "C#", icon: "/icons/csharp.png" },
-  { label: "Unity", icon: "/icons/unity.png" },
-  { label: "Postman", icon: "/icons/postman.png" },
-  { label: "Vercel", icon: "/icons/vercel.png" },
-  { label: "Data Structures", icon: "/icons/dsa.png" },
-  { label: "Algorithms", icon: "/icons/algorithm.png" },
+  { label: "React.js", icon: react },
+  { label: "Next.js", icon: next },
+  { label: "JavaScript", icon: JavaScript },
+  { label: "TypeScript", icon: TypeScript },
+  { label: "Node.js", icon: Node },
+  { label: "Express.js", icon: Express },
+  { label: "Redux", icon: Redux },
+  { label: "Tailwind", icon: Tailwind },
+ 
 ];
 
+
 export const techStack2 = [
-  { label: "React.js", icon: "/icons/react.png" },
-  { label: "Next.js", icon: "/icons/nextjs.png" },
-  { label: "JavaScript", icon: "/icons/javascript.png" },
-  { label: "TypeScript", icon: "/icons/typescript.png" },
-  { label: "Node.js", icon: "/icons/nodejs.png" },
-  { label: "Express.js", icon: "/icons/express.png" },
-  { label: "Socket.io", icon: "/icons/socketio.png" },
-  { label: "Redux", icon: "/icons/redux.png" },
-  { label: "Tailwind", icon: "/icons/tailwind.png" },
-  { label: "ShadCN", icon: "/icons/shadcn.png" },
-  { label: "NPM", icon: "/icons/npm.png" },
-  { label: "Python", icon: "/icons/python.png" },
-  { label: "MongoDB", icon: "/icons/mongodb.png" },
- 
-  { label: "GitHub", icon: "/icons/github.png" },
- 
-  { label: "Postman", icon: "/icons/postman.png" },
-  { label: "Vercel", icon: "/icons/vercel.png" },
-  { label: "Data Structures", icon: "/icons/dsa.png" },
-  { label: "Algorithms", icon: "/icons/algorithm.png" },
+  
+   { label: "ShadCN", icon: shadcn },
+  { label: "NPM", icon: NPM },
+  { label: "Python", icon: Python },
+  { label: "C", icon: C },
+  { label: "MongoDB", icon: MongoDB },
+  { label: "Java", icon: Java },
+  { label: "GitHub", icon: GitHub },
+  { label: "Postman", icon: Postman },
+  { label: "Vercel", icon: Vercel },
+  { label: "Data Structures", icon: datastructure },
+  { label: "Algorithms", icon: algorithms },
 ];
 
 
@@ -67,7 +63,7 @@ export default function Skills() {
           {[...techStack, ...techStack].map((tech, index) => (
             <div
               key={`row1-${index}`}
-              className="flex items-center gap-2 text-sm sm:text-base text-gray-300 hover:text-white transition"
+              className="flex ml-4 items-center gap-1 text-sm sm:text-base text-gray-300 hover:text-white transition"
             >
               <Image
                 src={tech.icon}
@@ -88,7 +84,7 @@ export default function Skills() {
           {[...techStack2, ...techStack2].map((tech, index) => (
             <div
               key={`row2-${index}`}
-              className="flex items-center gap-2 text-sm sm:text-base text-gray-300 hover:text-white transition"
+              className="flex ml-4 items-center gap-1 text-sm sm:text-base text-gray-300 hover:text-white transition"
             >
               <Image
                 src={tech.icon}

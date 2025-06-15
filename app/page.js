@@ -44,15 +44,19 @@ useEffect(() => {
 
       <Hero />
       <Skills />
-      <Projects />
-      <Resume/>
-      {/* <About/>
-       <ContributionGrid />
       <Experience />
       <Education />
+      <Projects />
+      
+      <Resume/>
+      <Footer />
+      {/* <About/>
+       <ContributionGrid />
+      
+      
      
       
-      <Footer /> */}
+       */}
     </main>
   );
 }
