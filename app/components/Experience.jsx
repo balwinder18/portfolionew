@@ -3,12 +3,12 @@ import Image from 'next/image';
 import banao from '../../public/images/banao.PNG'
 import { useState } from 'react';
 
-function Experience (){ 
-const [expanded, setExpanded] = useState(false);
+function Experience() {
+  const [expanded, setExpanded] = useState(false);
 
-return (
+  return (
 
-  <section id="work" className="flex flex-col gap-y-3 min-h-0 text-white">
+    <section id="work" className="flex flex-col gap-y-3 min-h-0 text-white">
       <div className="transform -translate-y-1.5 opacity-100 blur-0">
         <h2 className="text-xl font-bold">Work Experience</h2>
       </div>
@@ -34,29 +34,30 @@ return (
           <div className="flex-grow ml-4 flex flex-col">
             <div className="flex items-center justify-between gap-x-2 text-base">
               <h3 className="font-semibold leading-none text-xs sm:text-sm flex items-center gap-x-1">
-            
+
                 Banao Technologies
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className={`lucide-chevron-right size-4 transform transition-all duration-300 
-                  ${expanded ? 'rotate-90' : ''}
-                  opacity-0 group-hover:opacity-100 group-hover:translate-x-1`}
-                aria-hidden="true"
-              >
-                <path d="m9 18 6-6-6-6"></path>
-              </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className={`lucide-chevron-right size-4 transform transition-all duration-300
+    ${expanded ? 'rotate-90 opacity-100 translate-x-1' : 'opacity-0 group-hover:opacity-100 group-hover:translate-x-1'}
+  `}
+                  aria-hidden="true"
+                >
+                  <path d="m9 18 6-6-6-6"></path>
+                </svg>
+
 
               </h3>
 
               {/* SVG only visible on hover */}
-            
+
               <time
                 dateTime="2025-01"
                 className="text-xs sm:text-sm tabular-nums text-muted-foreground text-right"
@@ -69,9 +70,8 @@ return (
 
             {/* Expandable Description */}
             <div
-              className={`ml-2 transition-all duration-300 ease-in-out overflow-hidden ${
-                expanded ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-              }`}
+              className={`ml-2 transition-all duration-300 ease-in-out overflow-hidden ${expanded ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                }`}
             >
               <p className="mt-2 text-xs sm:text-sm text-muted-foreground">
                 • Collaborated with UX designers to implement responsive components, enhancing mobile usability.
@@ -91,6 +91,7 @@ return (
       </button>
     </section>
 
-)};
+  )
+};
 
 export default Experience;

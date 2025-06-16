@@ -1,11 +1,11 @@
 const projects = [
   {
-    title: "Shortfolio",
-    desc: "Build your portfolio in 2 minutes.",
+    title: "Take Notes",
+    desc: "Take notes haasle free in 2 minutes with this Chrome Extension",
     tech: ["Next.js", "Typescript", "Redux", "TailwindCSS", "Shadcn UI", "Appwrite", "React Hook Form"],
     site: "#",
     source: "#",
-    img: "shortfolio.png",
+    img: "takenotes.png",
   },
   {
     title: "Trackr",
@@ -19,7 +19,7 @@ const projects = [
 
 const Projects = () => (
   <section className="mt-4">
-    <h2 className="text-3xl text-white font-bold text-center mb-4">Check out my latest work</h2>
+    <h2 className=" text-white text-xl font-bold text-center mb-4">Check out my latest work</h2>
     {/* <div className="text-center text-gray-400 mb-6 max-w-2xl mx-auto">
       I love to build things ranging from simple frontend apps to complex full-stack products.
     </div> */}
