@@ -10,6 +10,8 @@ import ContributionGrid from './components/ContributionGrid';
 import About from "./components/About";
 import { useEffect } from "react";
 import Resume from "./components/Resume";
+import Contacts from "./components/Contacts";
+import Socials from "./components/Socials";
 
 
 export default function Home() {
@@ -49,6 +51,8 @@ useEffect(() => {
       <Projects />
       
       <Resume/>
+      <Socials/>
+      <Contacts/>
       <Footer />
       {/* <About/>
        <ContributionGrid />

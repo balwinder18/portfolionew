@@ -48,7 +48,7 @@ export default function Hero (){
       {/* Location + Role */}
       <div className="mt-2 text-left space-y-1">
         <div className="reveal text-sm sm:text-base text-white tracking-wide">
-          Software Developer | Engineeer
+          Software Developer | Engineer
         </div>
         {/* Location */}
        
@@ -57,7 +57,7 @@ export default function Hero (){
     src={pushpin}
     alt="Location Pin"
     className="w-4 mt-1 h-4 object-contain align-middle translate-y-[1px]"
-    style={{ filter: "grayscale(100%) brightness(0.9)" }}
+    
   />
   </span>
   <span className="align-middle">Haryana, India</span>
