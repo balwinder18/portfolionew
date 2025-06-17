@@ -20,9 +20,9 @@ const projects = [
 const Projects = () => (
   <section className="mt-4">
     <h2 className=" text-white text-xl font-bold text-center mb-4">Check out my latest work</h2>
-    {/* <div className="text-center text-gray-400 mb-6 max-w-2xl mx-auto">
+    <div className="text-center text-gray-400 mb-6 max-w-2xl mx-auto">
       I love to build things ranging from simple frontend apps to complex full-stack products.
-    </div> */}
+    </div>
     <div className="grid md:grid-cols-2 gap-6">
       {projects.map((proj, i) => (
         <div key={i} className="bg-gray-800 rounded-lg overflow-hidden shadow">

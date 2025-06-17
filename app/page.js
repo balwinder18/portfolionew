@@ -12,29 +12,30 @@ import { useEffect } from "react";
 import Resume from "./components/Resume";
 import Contacts from "./components/Contacts";
 import Socials from "./components/Socials";
+import FadeInSection from "./components/DelayReveal";
 
 
 export default function Home() {
-  function revealToSpan() {
-  document.querySelectorAll(".reveal")
-    .forEach(function (elem) {
-      let parent = document.createElement("span")
-      let child = document.createElement("span")
+//   function revealToSpan() {
+//   document.querySelectorAll(".reveal")
+//     .forEach(function (elem) {
+//       let parent = document.createElement("span")
+//       let child = document.createElement("span")
 
-      parent.classList.add("parent")
-      child.classList.add("child")
+//       parent.classList.add("parent")
+//       child.classList.add("child")
 
-      child.innerHTML = elem.innerHTML;
-      parent.appendChild(child)
+//       child.innerHTML = elem.innerHTML;
+//       parent.appendChild(child)
 
-      elem.innerHTML = "";
-      elem.appendChild(parent)
-    });
-}
+//       elem.innerHTML = "";
+//       elem.appendChild(parent)
+//     });
+// }
 
-useEffect(() => {
-  revealToSpan();
-}, [])
+// useEffect(() => {
+//   revealToSpan();
+// }, [])
 
 
   return (
@@ -44,16 +45,18 @@ useEffect(() => {
       
        
 
-      <Hero />
-      <Skills />
-      <Experience />
-      <Education />
-      <Projects />
+
+      <FadeInSection delay={0.2} className=" max-w-2xl mx-auto px-6 items-center"><Hero /></FadeInSection>
+
+      <FadeInSection delay={0.2} className=" max-w-2xl mx-auto px-6 items-center"><Skills /></FadeInSection>
+      <FadeInSection delay={0.2} className=" max-w-2xl mx-auto px-6 items-center"><Experience /></FadeInSection>
+      <FadeInSection delay={0.2} className=" max-w-2xl mx-auto px-6 items-center"><Education /></FadeInSection>
+      <FadeInSection delay={0.2} className=" max-w-2xl mx-auto px-6 items-center"><Projects /></FadeInSection>
       
-      <Resume/>
-      <Socials/>
-      <Contacts/>
-      <Footer />
+     <FadeInSection delay={0.2} className=" max-w-2xl mx-auto px-6 items-center"><Resume/></FadeInSection>
+     <FadeInSection delay={0.2} className=" max-w-2xl mx-auto px-6 items-center"><Socials/></FadeInSection>
+      <FadeInSection delay={0.2} className=" max-w-2xl mx-auto px-6 items-center"><Contacts/></FadeInSection>
+     <FadeInSection delay={0.2} className=" max-w-2xl mx-auto px-6 items-center"><Footer /></FadeInSection>
       {/* <About/>
        <ContributionGrid />
       

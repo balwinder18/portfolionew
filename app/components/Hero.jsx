@@ -8,27 +8,6 @@ import Image from "next/image";
 
 
 export default function Hero (){
-    function revealToSpan() {
-    document.querySelectorAll(".reveal")
-      .forEach(function (elem) {
-        let parent = document.createElement("span")
-        let child = document.createElement("span")
-  
-        parent.classList.add("parent")
-        child.classList.add("child")
-  
-        child.innerHTML = elem.innerHTML;
-        parent.appendChild(child)
-  
-        elem.innerHTML = "";
-        elem.appendChild(parent)
-      });
-  }
-  
-  useEffect(() => {
-    revealToSpan();
-  }, [])
-  
   
 
  return (
@@ -39,9 +18,9 @@ export default function Hero (){
       className="w-full text-white flex flex-col items-start justify-start px-6 pt-16 pb-4"
     >
       {/* Heading */}
-      <h1 className="reveal font-serif text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight leading-tight">
-        <span>Hi,</span>&nbsp;
-        <span>I am</span>&nbsp;
+      <h1 className="lg:whitespace-nowrap xl:whitespace-nowrap 2xl:whitespace-nowrap font-serif text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight leading-tight">
+        <span>Hi,I am</span>&nbsp;
+        {/* <span>I am</span>&nbsp; */}
         <span className="text-[#14cf93]">Balwinder</span>
       </h1>
 

@@ -10,7 +10,7 @@ import { SiLeetcode } from "react-icons/si";
 const Socials = () => {
   return (
     <footer className="w-full">
-  <div className="w-full mt-16">
+  <div className="w-full mt-4">
     <h2 className="text-3xl text-white font-bold text-center">My Socials</h2>
     
     <div className="grid grid-cols-2 lg:flex items-center justify-center gap-4 mt-4">
