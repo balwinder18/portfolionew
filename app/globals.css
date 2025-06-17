@@ -8,18 +8,7 @@ body{
 .is{
       color: #14cf93;
     }
-  .reveal .parent {
-  display: block;
-  overflow: hidden;
-}
-
-.reveal .parent .child {
-  display: block;
-  transform: translateY(100%);
-  animation: slideUp 0.8s ease forwards;
-  animation-delay: 0.2s;
-}
-
+ 
 @keyframes slideUp {
   to {
     transform: translateY(0%);
@@ -40,7 +29,7 @@ body{
 }
 
 .animate-slide {
-  animation: slide 30s linear infinite;
+  animation: slide 10s linear infinite;
 }
 @keyframes slide {
   0% {
@@ -53,7 +42,7 @@ body{
 
 
 .animate-slide-delayed {
-  animation: slide 30s linear infinite;
+  animation: slide 10s linear infinite;
   animation-delay: 2s; /* Adjust delay here */
 }
 

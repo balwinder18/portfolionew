@@ -54,7 +54,7 @@ import Image from "next/image";
 
 export default function Skills() {
   return (
-    <section className="w-full py-10 bg-black text-white overflow-hidden">
+    <section className="w-full bg-black text-white overflow-hidden">
       <h2 className="text-center text-xl font-bold mb-6">What I work with</h2>
 
       {/* First Row */}

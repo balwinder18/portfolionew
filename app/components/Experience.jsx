@@ -8,7 +8,7 @@ function Experience() {
 
   return (
 
-    <section id="work" className="flex flex-col gap-y-3 min-h-0 text-white">
+    <section id="work" className="flex mt-4 flex-col gap-y-3 min-h-0 text-white">
       <div className="transform -translate-y-1.5 opacity-100 blur-0">
         <h2 className="text-xl font-bold">Work Experience</h2>
       </div>
