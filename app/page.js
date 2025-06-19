@@ -6,7 +6,7 @@ import Education from './components/Education';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
-import ContributionGrid from './components/ContributionGrid';
+
 import About from "./components/About";
 import { useEffect } from "react";
 import Resume from "./components/Resume";
@@ -57,13 +57,7 @@ export default function Home() {
      <FadeInSection delay={0.2} className=" max-w-2xl mx-auto px-6 items-center"><Socials/></FadeInSection>
       <FadeInSection delay={0.2} className=" max-w-2xl mx-auto px-6 items-center"><Contacts/></FadeInSection>
      <FadeInSection delay={0.2} className=" max-w-2xl mx-auto px-6 items-center"><Footer /></FadeInSection>
-      {/* <About/>
-       <ContributionGrid />
-      
-      
      
-      
-       */}
     </main>
   );
 }

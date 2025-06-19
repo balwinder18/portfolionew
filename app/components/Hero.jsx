@@ -18,14 +18,7 @@ export default function Hero (){
       id="hero"
       className="w-full text-white flex flex-col items-start justify-start px-6 pt-16 pb-4"
     >
-{/*       
-      <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight leading-tight text-center mx-auto">
-  <span className="whitespace-nowrap">
-    Hi, I am
-    <span className="hidden sm:inline">&nbsp;</span>
-  </span>
-  <span className="block sm:inline text-[#14cf93]">Balwinder</span>
-</h1> */}
+
 <div className="flex flex-row items-center justify-center lg:gap-6 xl:gap-6 2xl:gap-6 gap-2 mt-4">
   {/* Text Section */}
   <div className="text-left">
@@ -57,7 +50,8 @@ export default function Hero (){
         {/* Location */}
        
        <div className="reveal flex items-center text-sm sm:text-base text-gray-400 gap-2">
-  <span><Image
+  <span>
+    <Image
     src={pushpin}
     alt="Location Pin"
     className="w-4 mt-1 h-4 object-contain align-middle translate-y-[1px]"

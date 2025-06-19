@@ -56,10 +56,6 @@ const Projects = () => {
       <h2 className="text-white text-xl font-bold text-center mb-4">
         Check out my latest work
       </h2>
-      {/* <div className="text-center text-gray-300 mb-6 max-w-2xl mx-auto">
-        I love to build things ranging from simple frontend apps to complex full-stack products.
-      </div> */}
-
       <div className="grid md:grid-cols-2 gap-6">
         {visibleProjects.map((proj, i) => (
           <div
@@ -125,7 +121,7 @@ const Projects = () => {
         ))}
       </div>
 
-      {/* See More / See Less Button */}
+      
       {projects.length > 3 && (
         <div className="text-center mt-6">
           <button
