@@ -105,7 +105,7 @@ const Socials = () => {
 
       <a
         className="p-4 bg-white rounded-full transition hover:scale-105"
-        href="https://x.com/Balwinder_sb?t=NkqHaphnsZ2mCYY81ZykNA&s=09"
+        href="https://x.com/singhbalwinderr"
         target="_blank"
         rel="noopener noreferrer"
       >
