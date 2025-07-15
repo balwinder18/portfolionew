@@ -11,8 +11,8 @@ const projects = [
 
   {
     title: "Athlend",
-    desc: "A Local Sports Ground Renting website",
-    tech: ["Next.js", "Typescript", "TailwindCSS", "Next Auth"],
+    desc: "A Local Sports Ground Renting website with AI enabled chatbot for user Queries",
+    tech: ["Next.js", "Typescript", "Langchain","TailwindCSS", "Next Auth"],
     site: "https://sportle-chi.vercel.app/",
     source: "https://github.com/balwinder18/Sportle",
     img: athlend,

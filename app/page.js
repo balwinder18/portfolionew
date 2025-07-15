@@ -13,6 +13,7 @@ import Resume from "./components/Resume";
 import Contacts from "./components/Contacts";
 import Socials from "./components/Socials";
 import FadeInSection from "./components/DelayReveal";
+import Navbar from '../app/components/Navbar'
 
 
 export default function Home() {
@@ -44,6 +45,7 @@ export default function Home() {
     <main className="flex flex-col min-h-[100dvh]  max-w-2xl mx-auto px-6 items-center">
       
        
+       
 
 
       <FadeInSection delay={0.2} className=" max-w-2xl mx-auto px-6 items-center"><Hero /></FadeInSection>
@@ -57,7 +59,7 @@ export default function Home() {
      <FadeInSection delay={0.2} className=" max-w-2xl mx-auto px-6 items-center"><Socials/></FadeInSection>
       <FadeInSection delay={0.2} className=" max-w-2xl mx-auto px-6 items-center"><Contacts/></FadeInSection>
      <FadeInSection delay={0.2} className=" max-w-2xl mx-auto px-6 items-center"><Footer /></FadeInSection>
-     
+     <Navbar/>
     </main>
   );
 }
