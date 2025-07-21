@@ -9,7 +9,7 @@ import { SiLeetcode } from "react-icons/si";
 
 const Socials = () => {
   return (
-<footer className="w-full bg-black py-10">
+<footer className="w-full py-10">
   <div className="w-full max-w-5xl mx-auto px-4">
     <h2 className="text-3xl sm:text-4xl text-white font-bold text-center mb-8">
       My Socials

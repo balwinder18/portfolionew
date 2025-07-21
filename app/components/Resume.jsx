@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Resume() {
   return (
-    <section className="w-full px-4 py-8 bg-black text-white">
+    <section className="w-full px-4 py-8 text-white">
   <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
     <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-center sm:text-left">
       Checkout my <span className="text-[#10a87a]">Resume</span> here
