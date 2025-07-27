@@ -22,7 +22,7 @@ function loader() {
   var tl = gsap.timeline();
   tl
     .to("#black", {
-      height: 0,
+      height: -10,
       duration: 1,
       delay: 1,
     })
@@ -63,7 +63,7 @@ export default function Home() {
             <SpotlightText /> {/* This will be the background effect */}
 
             {/* Your main className="relative z-20 ... bg-transparent content, needs a higher z-index to be visible */}
-            <main className="relative z-20 flex flex-col min-h-[100dvh] max-w-2xl mx-auto px-6 items-center bg-transparent">
+            <main className="relative z-20 flex flex-col min-h-[100dvh] max-w-2xl mx-auto lg:px-6 xl:px-6 2xl:px-6 px-3 items-center bg-transparent">
                 {/* ^^^ This line is CRUCIAL. Ensure bg-transparent is here. */}
 
                 <FadeInSection delay={0.2} className="max-w-2xl mx-auto px-6 items-center"><Hero /></FadeInSection>
@@ -74,7 +74,7 @@ export default function Home() {
 
                 <FadeInSection delay={0.2} className="max-w-2xl mx-auto px-6 items-center"><Resume/></FadeInSection>
                 <FadeInSection delay={0.2} className="max-w-2xl mx-auto px-6 items-center"><Socials/></FadeInSection>
-                <FadeInSection delay={0.2} className="max-w-2xl mx-auto px-6 items-center"><Contacts/></FadeInSection>
+                <FadeInSection delay={0.2} className="max-w-2xl mx-auto px-3 items-center"><Contacts/></FadeInSection>
                 <FadeInSection delay={0.2} className="max-w-2xl mx-auto px-6 items-center"><Footer /></FadeInSection>
                 <Navbar/>
             </main>

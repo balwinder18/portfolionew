@@ -16,10 +16,10 @@ export default function Hero (){
 <>
  <section
       id="hero"
-      className="w-full text-white flex flex-col items-start justify-start px-6 pt-16 pb-4"
+      className="w-full text-white flex flex-col items-start justify-start lg:px-6 xl:px-6 2xl:px-6 px-2 lg:pt-16 xl:pt-16 2xl:pt-16 pt-6 pb-4"
     >
 
-<div className="flex flex-row items-center justify-center lg:gap-6 xl:gap-6 2xl:gap-6 gap-2 mt-4">
+<div className="flex flex-row items-center justify-center lg:gap-6 xl:gap-6 2xl:gap-6 gap-10 mt-4">
   {/* Text Section */}
   <div className="text-left">
     <h1 className="font-serif text-3xl xs:text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight leading-tight">
@@ -29,7 +29,7 @@ export default function Hero (){
   </div>
 
   {/* Image Section */}
-  <div className="lg:w-32 xl:w-32 2xl:w-32 h-20 w-20 lg:h-32 xl:h-32 2xl:h-32 lg:mt-2 xl:mt-2 2xl:mt-2 mb-4 lg:mb-0 xl:mb-0 2xl:mb-0 lg:ml-[30px] xl:ml-[30px] 2xl:ml-[30px] sm:w-36 sm:h-36 rounded-full overflow-hidden border-4 border-[#14cf93] shadow-lg">
+  <div className="lg:w-32 xl:w-32 2xl:w-32 mt-4 h-20 w-20 lg:h-32 xl:h-32 2xl:h-32 lg:mt-2 xl:mt-2 2xl:mt-2 mb-4 lg:mb-0 xl:mb-0 2xl:mb-0 lg:ml-[30px] xl:ml-[30px] 2xl:ml-[30px] sm:w-36 sm:h-36 rounded-full overflow-hidden border-4 border-[#14cf93] shadow-lg">
     <Image
       src={me}
       alt="Balwinder"
