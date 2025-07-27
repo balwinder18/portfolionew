@@ -44,12 +44,12 @@ export default function Hero (){
 
       {/* Location + Role */}
       <div className="mt-2 text-left space-y-1">
-        <div className="reveal text-sm sm:text-base text-white tracking-wide">
+        <div className="text-sm sm:text-base text-white tracking-wide">
           Software Developer | Engineer
         </div>
         {/* Location */}
        
-       <div className="reveal flex items-center text-sm sm:text-base text-gray-400 gap-2">
+       <div className="flex items-center text-sm sm:text-base text-gray-400 gap-2">
   <span>
     <Image
     src={pushpin}

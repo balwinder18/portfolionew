@@ -4,6 +4,7 @@ import takenote from '../../public/images/takenote.PNG';
 import athlend from '../../public/images/athlend.PNG';
 import esign from '../../public/images/esign.PNG'
 import portfolio from '../../public/images/portfolio.PNG'
+import codeArena from '../../public/images/codeArena.PNG'
 import Image from "next/image";
 
 
@@ -16,6 +17,15 @@ const projects = [
     site: "https://sportle-chi.vercel.app/",
     source: "https://github.com/balwinder18/Sportle",
     img: athlend,
+  },
+
+   {
+    title: "CodeArena",
+    desc: "A real-time 1v1 competitive coding platform, where users can battle by solving DSA problems in private rooms.",
+    tech: ["Next.js", "Javascript", "Node.js","Socket.IO","TailwindCSS","WebSockets"],
+    site: "https://code-arena-omega.vercel.app/",
+    source: "https://github.com/balwinder18/CodeArena",
+    img: codeArena,
   },
 
   {

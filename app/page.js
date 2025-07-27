@@ -15,17 +15,51 @@ import Socials from "./components/Socials";
 import FadeInSection from "./components/DelayReveal";
 import Navbar from '../app/components/Navbar'
 import SpotlightText from "./components/Spotlight";
+import { gsap } from "gsap";
 
+
+function loader() {
+  var tl = gsap.timeline();
+  tl
+    .to("#black", {
+      height: 0,
+      duration: 1,
+      delay: 1,
+    })
+
+    
+
+    .to(".reveal", {
+      opacity: 0,
+    })
+
+    .to(".disappear", {
+      opacity: 1,
+      duration: 1.5, 
+      ease: "power2.inOut", 
+    }, "-=0.5");
+}
 
 export default function Home() {
 
-   
+   useEffect(() => {
+    loader();
+  }, [])
+
 
 
   return (
    
+<>
+    <div className="bg-black h-screen w-full flex justify-center items-center" id="black">
+        <div id="name">
+          <h1 className="text-white reveal"><span>Balwinder Singh's</span><span className="text-green-500 italic"> Portfolio</span>
+          </h1>
+        </div>
 
-    <div className="relative">
+      </div>
+
+    <div className="relative disappear opacity-0">
             <SpotlightText /> {/* This will be the background effect */}
 
             {/* Your main className="relative z-20 ... bg-transparent content, needs a higher z-index to be visible */}
@@ -45,5 +79,6 @@ export default function Home() {
                 <Navbar/>
             </main>
         </div>
+        </>
   );
 }
