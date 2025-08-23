@@ -124,7 +124,7 @@ const [isPopupOpen, setIsPopupOpen] = useState(false);
         <div className="flex justify-center mt-6">
         <button
           onClick={openPopup}
-         className="text-[#14fca9] font-semibold underline hover:text-white transition"
+         className="text-[#14fca9] underline hover:text-white transition"
            >
           See All Skills
         </button>
@@ -151,7 +151,7 @@ const [isPopupOpen, setIsPopupOpen] = useState(false);
                 {allSkills.map((tech, index) => (
                   <div
                     key={index}
-                    className="flex flex-col items-center p-4 bg-gray-900/50 hover:bg-gray-800/70 rounded-lg border border-gray-800 hover:border-teal-500/50 transition-all duration-200 group hover:shadow-lg hover:shadow-teal-500/10"
+                    className="flex flex-col items-center p-4 hover:bg-gray-800/70 rounded-lg border border-gray-800 hover:border-teal-500/50 transition-all duration-200 group hover:shadow-lg hover:shadow-teal-500/10"
                   >
                     <Image
                       src={tech.icon}
