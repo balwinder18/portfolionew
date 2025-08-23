@@ -18,6 +18,9 @@ import Postman from '../../public/images/Postman.png'
 import Vercel from '../../public/images/Vercel.png'
 import datastructure from '../../public/images/datastructure.png'
 import algorithms from '../../public/images/algorithms.png'
+import Redis from '../../public/images/redis.png'
+import Langchain from '../../public/images/langchain.png'
+
 export const techStack = [
   { label: "React.js", icon: react },
   { label: "Next.js", icon: next },
@@ -25,6 +28,8 @@ export const techStack = [
   { label: "TypeScript", icon: TypeScript },
   { label: "Node.js", icon: Node },
   { label: "Express.js", icon: Express },
+  { label: "Redis", icon: Redis },
+   { label: "LangChain", icon: Langchain },
   { label: "Redux", icon: Redux },
   { label: "Tailwind", icon: Tailwind },
  
@@ -34,11 +39,12 @@ export const techStack = [
 export const techStack2 = [
   
    { label: "ShadCN", icon: shadcn },
+   { label: "Java", icon: Java },
   { label: "NPM", icon: NPM },
   { label: "Python", icon: Python },
   { label: "C", icon: C },
   { label: "MongoDB", icon: MongoDB },
-  { label: "Java", icon: Java },
+  
   { label: "GitHub", icon: GitHub },
   { label: "Postman", icon: Postman },
   { label: "Vercel", icon: Vercel },
@@ -47,14 +53,26 @@ export const techStack2 = [
 ];
 
 
- 
+ const allSkills = [...techStack, ...techStack2];
 
 
 import Image from "next/image";
+import { useState } from 'react';
 
 export default function Skills() {
+
+
+const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+  const openPopup = () => setIsPopupOpen(true);
+  const closePopup = () => setIsPopupOpen(false);
+
+
   return (
-    <section className="w-full text-white overflow-hidden">
+   
+
+
+  <section className="w-full text-white overflow-hidden relative">
       <h2 className="text-center text-xl font-bold mb-6">What I work with</h2>
 
       {/* First Row */}
@@ -98,7 +116,63 @@ export default function Skills() {
           ))}
         </div>
       </div>
+
+      {/* See All Button */}
+
+ 
+
+        <div className="flex justify-center mt-6">
+        <button
+          onClick={openPopup}
+         className="text-[#14fca9] font-semibold underline hover:text-white transition"
+           >
+          See All Skills
+        </button>
+      </div>
+
+      {/* Popup Modal */}
+      {isPopupOpen && (
+        <div className="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-50 p-4">
+          <div className="bg-black/95 border border-gray-800 rounded-xl max-w-4xl w-full max-h-[80vh] overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:bg-black [&::-webkit-scrollbar-thumb]:bg-gray-800 [&::-webkit-scrollbar-thumb]:rounded-full ">
+            {/* Popup Header */}
+            <div className="flex justify-between items-center p-6 border-b border-gray-800">
+              <h3 className="text-xl font-bold text-white">All Skills & Technologies</h3>
+              <button
+                onClick={closePopup}
+                className="text-gray-400 hover:text-teal-400 transition-colors text-2xl leading-none w-8 h-8 flex items-center justify-center hover:bg-teal-500/10 rounded-full"
+              >
+                ×
+              </button>
+            </div>
+
+            {/* Skills Grid */}
+            <div className="p-6">
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+                {allSkills.map((tech, index) => (
+                  <div
+                    key={index}
+                    className="flex flex-col items-center p-4 bg-gray-900/50 hover:bg-gray-800/70 rounded-lg border border-gray-800 hover:border-teal-500/50 transition-all duration-200 group hover:shadow-lg hover:shadow-teal-500/10"
+                  >
+                    <Image
+                      src={tech.icon}
+                      alt={tech.label}
+                      width={40}
+                      height={40}
+                      className="w-10 h-10 object-contain mb-2 group-hover:scale-110 transition-transform duration-200"
+                    />
+                    <span className="text-sm text-gray-300 group-hover:text-white transition-colors text-center">
+                      {tech.label}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
+
+
   );
 }
 
